@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="custom-exception-example" />
         <module name="generate-random-data" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="custom-exception-example" target="1.6" />
       <module name="generate-random-data" target="1.6" />
       <module name="Random Data Generation" target="1.6" />
       <module name="Spring Boot Practise" target="1.6" />

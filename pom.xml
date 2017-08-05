@@ -11,6 +11,7 @@
 
     <modules>
         <module>generate-random-data</module>
+        <module>custom-exception-example</module>
     </modules>
 
     <parent>
