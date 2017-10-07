@@ -11,7 +11,11 @@
 
     <modules>
         <module>generate-random-data</module>
+<!--
         <module>custom-exception-example</module>
+-->
+        <module>reading-from-properties</module>
+        <module>boot-oauth2-practise</module>
     </modules>
 
     <parent>

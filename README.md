@@ -1,6 +1,6 @@
 # Spring Boot Practise
 
-Practise Programs while following Udemy Spring Boot Tutorial
+Practise Programs
 
 -- Pratik Ambani
 

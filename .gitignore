@@ -6,10 +6,6 @@
 *.ear
 
 
-# Covers JetBrains IDEs: IntelliJ
-
-*.iml
-
 ## Directory-based project format:
 .idea/
 
