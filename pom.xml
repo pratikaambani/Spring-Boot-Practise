@@ -10,12 +10,11 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>generate-random-data</module>
-<!--
-        <module>custom-exception-example</module>
--->
-        <module>reading-from-properties</module>
         <module>boot-oauth2-practise</module>
+        <module>cors-integration-practise</module>
+        <module>custom-exception-example</module>
+        <module>generate-random-data</module>
+        <module>reading-from-properties</module>
     </modules>
 
     <parent>
