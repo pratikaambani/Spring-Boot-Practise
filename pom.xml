@@ -15,6 +15,7 @@
         <module>custom-exception-example</module>
         <module>generate-random-data</module>
         <module>reading-from-properties</module>
+        <module>spring-boot-example</module>
     </modules>
 
     <parent>
