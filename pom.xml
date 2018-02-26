@@ -16,6 +16,8 @@
         <module>generate-random-data</module>
         <module>reading-from-properties</module>
         <module>spring-boot-example</module>
+        <module>properties-using-yaml</module>
+        <module>spring-boot-loader</module>
     </modules>
 
     <parent>
