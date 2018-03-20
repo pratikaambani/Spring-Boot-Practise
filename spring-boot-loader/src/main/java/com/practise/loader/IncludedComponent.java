@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
  * Created by Pratik Ambani on 26/02/2018.
  */
 @Component
-public class SampleComponent {
+public class IncludedComponent {
 
     private int id;
     private String name;
