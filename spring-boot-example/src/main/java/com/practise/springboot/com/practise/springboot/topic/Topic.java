@@ -44,8 +44,7 @@ public class Topic {
 
 
     @Override
-    public String toString()
-    {
-        return "ClassPojo [id = "+id+", description = "+description+", name = "+name+"]";
+    public String toString() {
+        return "ClassPojo [id = " + id + ", description = " + description + ", name = " + name + "]";
     }
 }

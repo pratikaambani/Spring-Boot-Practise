@@ -2,7 +2,6 @@ package com.practise.springboot.com.practise.springboot.topic;
 
 import com.wordnik.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -54,7 +53,6 @@ public class TopicController {
     public void deleteTopic(@PathVariable int id) {
         topicService.deleteTopic(id);
     }
-
 
 
 }

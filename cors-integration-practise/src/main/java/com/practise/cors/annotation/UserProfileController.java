@@ -1,14 +1,14 @@
 package com.practise.cors.annotation;
 
-import com.wordnik.swagger.annotations.ApiOperation;
 import UserProfileDetail;
 import UserProfileResource;
-import spring.AuthorisationRequestContext;
+import com.wordnik.swagger.annotations.ApiOperation;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import spring.AuthorisationRequestContext;
 
 import javax.validation.Valid;
 

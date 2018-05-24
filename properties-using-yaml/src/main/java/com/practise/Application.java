@@ -15,15 +15,15 @@ public class Application implements CommandLineRunner {
     @Autowired
     private ServerProperties serverProperties;
 
-    @Override
-    public void run(String... args) throws Exception {
-        System.out.println(serverProperties);
-    }
-
     public static void main(String[] args) throws Exception {
         SpringApplication.run(Application.class, args);
 
         System.out.println("Change Profiles to, dev and prod");
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
+        System.out.println(serverProperties);
     }
 
 }

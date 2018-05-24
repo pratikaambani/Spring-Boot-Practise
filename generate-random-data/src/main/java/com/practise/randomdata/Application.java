@@ -19,14 +19,13 @@ public class Application {
     @Autowired
     RandomValues randomValues;
 
-
-    @RequestMapping("/random")
-    public String randomMessage(){
-        return "Random data: " +randomValues.getRandomStringMessage();
-    }
-
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
+    }
+
+    @RequestMapping("/random")
+    public String randomMessage() {
+        return "Random data: " + randomValues.getRandomStringMessage();
     }
 
 }

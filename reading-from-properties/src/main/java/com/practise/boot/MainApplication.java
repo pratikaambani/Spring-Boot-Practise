@@ -18,12 +18,12 @@ public class MainApplication {
     @Autowired
     UserDetails userDetails;
 
+    public static void main(String[] args) {
+        SpringApplication.run(MainApplication.class, args);
+    }
+
     @RequestMapping("/props")
     public String userDetails() {
         return userDetails.toString();
-    }
-
-    public static void main(String[] args) {
-        SpringApplication.run(MainApplication.class, args);
     }
 }

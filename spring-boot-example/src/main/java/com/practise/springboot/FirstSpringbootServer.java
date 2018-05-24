@@ -5,10 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Created by Pratik Ambani on 24/12/16.
- *
+ * <p>
  * Sample Spring boot Starter Application
  */
-
 
 
 @SpringBootApplication

@@ -2,22 +2,22 @@ package com.practise.cors.annotation;
 
 
 import com.wordnik.swagger.annotations.ApiOperation;
-import user.*;
-import user.servlet.HttpServletResponseAccessPinTokenBinder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import user.*;
+import user.servlet.HttpServletResponseAccessPinTokenBinder;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
 
-import static user.AccessControllerResource.*;
 import static TokenResource.API_V1_APPLICATION_HEADER;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.web.bind.annotation.RequestMethod.DELETE;
 import static org.springframework.web.bind.annotation.RequestMethod.POST;
+import static user.AccessControllerResource.*;
 
 /**
  * Created by Pratik Ambani on 01/09/17.
@@ -42,15 +42,15 @@ public class ConnectionUserAccessControllerBothLevel {
                               @Valid @RequestHeader(API_V1_APPLICATION_HEADER) String application,
                               HttpServletResponse response) {
         log.info("adding user access for {} access: {}", connectionAccessPin);
-        userAccessResource.addAccess(connectionAccessPin, token,accType);
+        userAccessResource.addAccess(connectionAccessPin, token, accType);
         servletResponseTokenBinder.delete(response);
     }
 
     @CrossOrigin(maxAge = 3600)
     @ApiOperation("Remove access associated with AUID")
     @RequestMapping(method = DELETE, value = API_V1_CONNECTION_AUID, produces = APPLICATION_JSON_VALUE)
-    public void removeUserAccess( @Valid @NotNull @PathVariable(API_V1_ACCESSES_AUID_VAR)  String authid ,
-                                  @Valid @RequestHeader(API_V1_APPLICATION_HEADER) String application) {
+    public void removeUserAccess(@Valid @NotNull @PathVariable(API_V1_ACCESSES_AUID_VAR) String authid,
+                                 @Valid @RequestHeader(API_V1_APPLICATION_HEADER) String application) {
         log.info("removing user access for {} access: {}", authid);
         userAccessResource.removeAccesses(authid);
     }
