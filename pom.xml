@@ -18,6 +18,7 @@
         <module>spring-boot-example</module>
         <module>properties-using-yaml</module>
         <module>spring-boot-loader</module>
+        <module>spring-cloud-practise</module>
     </modules>
 
     <parent>

@@ -5,3 +5,48 @@ Practise Programs
 -- Pratik Ambani
 
 
+----------
+Module 01:
+----------
+Microservices:
+Loosely coupled SOA with bound context
+
+Faster Changes
+Higher availability
+DevOps: CDCI
+Loosely coupled
+Failure Toleration
+Independent teams
+
+Spring Cloud:
+March'15
+Build common distributed systems patterns
+Open Source
+Run Anywhere
+Optimized for spring apps
+
+Reputed Spring Clould Projects:
+Spring Cloud Sleuth
+Spring Cloud Config
+Spring Cloud Netflix
+Spring Cloud Security
+Spring Cloud Stream
+Spring Cloud Zookeeper
+Spring Cloud AWS
+Spring Cloud Spinnaker
+Spring Cloud Contract
+
+In this course:
+Spring Cloud Config
+Spring Cloud Security
+Spring Cloud Sleuth
+Spring Cloud Task
+
+SB Actuators:
+health, beans, env, metrics, mappings, trace
+
+Goals:
+Understanding modern Microservices patterns
+Exploring capability of Spring Cloud
+Configuring and Extending Spring Cloud
+
