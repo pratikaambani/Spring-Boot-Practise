@@ -79,3 +79,40 @@ Start server
 http://localhost:8888/app1/default
 http://localhost:8888/app2/default
 http://localhost:8888/app3/default
+
+
+Config Server:
+uri : git location - points to git location
+searchPaths:'stat*' - pattern to search sub directories
+repos: points to alternate repo
+pattern:'*/prod' : pattern to go to alternate repo
+uri:'repo uri'
+
+https://github.com/repo/rates/{application}/{profile}[/{label}]
+label is optional
+<branch: master>
+|
+|---applicaion.properties
+|
+|---station1
+|------|--s1rates-dev.properties
+|------|--s1rates-prod.properties
+|------|--s1rates.properties
+|------|
+|---station2
+|------|--s2rates-dev.properties
+|------|--s2rates-prod.properties
+
+* Creating config server for git files
+    - Create github repo with files
+    - create spring starter project
+    - annotate main class
+    - set git URL in YAML file(application.yml)
+    - Run as Spring Boot app
+    - Experiments with search paths and queries
+
+Note: Use git URL and not cloning URL
+
+Try with below URLs,
+http://localhost:8888/s1rates/default
+http://localhost:8888/s1rates/master
