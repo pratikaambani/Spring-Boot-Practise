@@ -11,6 +11,9 @@ spring:
       server:
         git:
           uri: https://github.com/pratikaambani/spring-cloud-config
+          #search in selective directories only, array
+          search-paths:
+            - 'station*'
           #for private gitlab repos
           #username:
           #password:
