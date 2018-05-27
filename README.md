@@ -116,3 +116,13 @@ Note: Use git URL and not cloning URL
 Try with below URLs,
 http://localhost:8888/s1rates/default
 http://localhost:8888/s1rates/master
+
+http://localhost:8888/s1rates/dev
+s1-dev, s1rates, default(app.props)  props covered using search-paths
+
+To read properties file,
+http://localhost:8888/s1rates-default.properties
+
+To read as json,
+http://localhost:8888/s1rates-default.json
+
